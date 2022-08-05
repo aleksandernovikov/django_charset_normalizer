@@ -1,8 +1,13 @@
 # The issue was found in the Django project
 
-[Martor](https://github.com/agusmakmun/django-markdown-editor) uses  [charset_normalizer](https://github.com/ousret/charset_normalizer)
+[Martor](https://github.com/agusmakmun/django-markdown-editor)
+uses  [charset_normalizer](https://github.com/ousret/charset_normalizer)
 
-When calling the command `python manage.py makemessages -l ru`, for example. An error occurs.
+1. Clone this project
+2. Create venv
+3. Install requirements `pip install -r requirements.txt` to venv
+4. Call Django command `python manage.py makemessages -l ru`
+5. When calling the command `python manage.py makemessages -l ru`, for example. An error occurs.
 
 ```
 xgettext: ./venv/lib/python3.8/site-packages/charset_normalizer/__init__.py:1: Кодировка "utf_8" неизвестна.  Продолжение работы с ASCII.
